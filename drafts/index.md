@@ -4,4 +4,4 @@
 
 
 
-[Chapter 1](/temp2.html) 
+[Chapter 1](mathwords.github.io/temp2.html) 
