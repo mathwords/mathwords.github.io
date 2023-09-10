@@ -8,7 +8,7 @@
 
 ---
 
-<u>***Exercise 1***</u>
+***Exercise 1***
 
 Let $H$ represent the statement: ***Homer** will visit the Flanders*. 
 
@@ -24,13 +24,13 @@ If we assume that $L$ is False, then we have:
 $$
 \neg L \Rightarrow G \Rightarrow L
 $$
-where the first implication follows from (2), and the second implication follows from (5). We arrive at a contradiction, therefore $\neg L$ is False. We now reason as follows:
+where the first implication follows from (2), and the second implication follows from (5). We arrive at a contradiction, therefore $L$ is True. We now reason as follows:
 $$
 L \Rightarrow B \Rightarrow \neg M \Rightarrow \neg H \Rightarrow \neg G
 $$
 The above implications follow from the statements (4), (3), (1) and (5) respectively.
 
-We can therefore conclude that only Lisa and Bart will visit the Flanders.
+We therefore conclude that only Lisa and Bart will visit the Flanders.
 
 
 
@@ -38,13 +38,13 @@ We can therefore conclude that only Lisa and Bart will visit the Flanders.
 
 ***Exercise 2***
 
-Let $n_B$ represent the number of books in the library of Count Dracula and let $n_W$ represent the total number of words in all the books. Let $E(x)$ be the property that book $x$ contains at least one word. We can now reason as follows:
+Let $n_B$ represent the number of books in the library of Count Dracula and let $n_W$ represent the total number of words in all the books. Let $E(x)$ be the property that book $x$ contains at least one word. We can now make the following deduction.
 $$
-\forall x\ E(x) \Rightarrow n_W \geq n_B
+\forall x\ E(x) \implies n_W \geq n_B
 $$
-But this is a contradiction since it is given that $n_W < n_B.$ Our assumption that $\forall x\ E(x)$ is therefore False. It's negation is therefore True.
+But this is a contradiction since it is given that $n_W < n_B.$ Hence, the statement $\forall x\ E(x)$ is False. Its negation is therefore True.
 $$
-\neg(\forall x\ E(x))\ \Leftrightarrow\ \exists x\ \neg E(x)
+\neg(\forall x\ E(x))\ \iff\ \exists x\ \neg E(x)
 $$
 In other words, there exists a book in Count Dracula's library that contains zero words.
 
