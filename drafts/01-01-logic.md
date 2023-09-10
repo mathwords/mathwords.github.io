@@ -1,14 +1,55 @@
-
-
 [< Home](/index.html)
+
+
 
 **I.1 Fundamentals of Logic**
 
 
 
-<u>Exercise 1</u>
+---
 
-Inline $H \Rightarrow M$ and display:
+<u>***Exercise 1***</u>
+
+Let $H$ represent the statement: ***Homer** will visit the Flanders*. 
+
+And let $M$, $B$, $L$, and $G$ each, be similar statements that claim Marge, Bart, Lisa and Maggie respectively will visit the Flanders. The statements made by Maud Flanders can be constructed from the above statements as follows.
+
+1. $H \Rightarrow M$
+2. $G \vee L$
+3. $(M \vee B) \wedge \neg(M \wedge B)$
+4. $B \Leftrightarrow L$
+5. $G \Rightarrow (L \and H)$
+
+If we assume that $L$ is False, then we have:
 $$
-\neg A \Leftrightarrow B 
+\neg L \Rightarrow G \Rightarrow L
 $$
+where the first implication follows from (2), and the second implication follows from (5). We arrive at a contradiction, therefore $\neg L$ is False. We now reason as follows:
+$$
+L \Rightarrow B \Rightarrow \neg M \Rightarrow \neg H \Rightarrow \neg G
+$$
+The above implications follow from the statements (4), (3), (1) and (5) respectively.
+
+We can therefore conclude that only Lisa and Bart will visit the Flanders.
+
+
+
+---
+
+***Exercise 2***
+
+Let $n_B$ represent the number of books in the library of Count Dracula and let $n_W$ represent the total number of words in all the books. Let $E(x)$ be the property that book $x$ contains at least one word. We can now reason as follows:
+$$
+\forall x\ E(x) \Rightarrow n_W \geq n_B
+$$
+But this is a contradiction since it is given that $n_W < n_B.$ Our assumption that $\forall x\ E(x)$ is therefore False. It's negation is therefore True.
+$$
+\neg(\forall x\ E(x))\ \Leftrightarrow\ \exists x\ \neg E(x)
+$$
+In other words, there exists a book in Count Dracula's library that contains zero words.
+
+
+
+
+
+[< Home](/index.html)
