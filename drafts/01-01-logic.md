@@ -46,7 +46,7 @@ But this is a contradiction since it is given that $n_W < n_B.$ Hence, the state
 $$
 \neg(\forall x\ E(x))\ \iff\ \exists x\ \neg E(x)
 $$
-In other words, there exists a book in Count Dracula's library that contains zero words.
+There exists a book in Count Dracula's library that contains zero words.
 
 
 
