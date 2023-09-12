@@ -10,3 +10,5 @@
 
 1. [Fundamentals of Logic](/01-01-logic.html) 
 2. [Sets](/01-02-sets.html)
+3. [Functions](/01-03-functions.html)
+
