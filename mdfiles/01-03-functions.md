@@ -36,7 +36,9 @@ $$
 
 **a)**    See Exercise 1.
 
-**b)**    
+**b)**    Construct $h$ as follows. $\forall y \in f(X),$ define $h:Y \to X$ by the mapping $y \mapsto x,$ such that $f(x) =y.$ Since $f$ is injective, this is a valid mapping (ie: $\forall y \in f(X) \ \exists!x$ such that $y \mapsto x$). And $\forall y \in Y\setminus f(X),$ define $h:Y \to X$ by the mapping $y \mapsto x_1,$ where $x_1$ is any element of $X.$ We now have $h$ such that $h \circ f (x) = h(f(x)) = h(y) = x.$ Hence, $h\circ f = \mathrm{id}_X.$
+
+  
 
 
 

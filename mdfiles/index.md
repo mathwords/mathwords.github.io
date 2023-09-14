@@ -1,4 +1,4 @@
-(Unofficial) notes, select exercise solutions, and errata corresponding to the English edition of:
+(Unofficial) notes, select exercise solutions, and [errata](/00-errata.html) corresponding to the English edition of:
 
 **Analysis I** (2005) by **Herbert Amann** and **Joachim Escher**. 
 
