@@ -5,14 +5,16 @@
 **ERRATA**
 
 1. p.20 Missing sentence in proposition 3.8. Add:
-   
+
    > **3.8 Proposition**    Let $f:X \to Y$ be a function. The following...
-   
+
 2. p.21 Missing space in Exercise 3(b). Insert space:
 
    > $f$ is injective... 
-   
-3. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
+
+3. p.21 Mismatch of left and right parentheses size in Exercise 4(b). 
+
+4. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
 
    > A set $X$ is called **finite**, if $X$ is empty, or if there exists a bijection from $\{1,...,n\}$ to $X$ for some $n \in \mathbb{N}^{\times}.$
 

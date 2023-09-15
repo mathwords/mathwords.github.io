@@ -19,7 +19,8 @@ $$
 
 * Suppose that $f$ and $g$ are both injective.
   $g(f(x_1)) = g(f(x_2))$ $\implies$ $f(x_1) = f(x_2)$ $\implies$ $x_1 = x_2.$ 
-  First implication is true because $g$ is injective and the second implication is true because $f$ is injective.   Hence injectivity of $f$ and $g$ implies injectivity of $g \circ f.$
+  First implication is true because $g$ is injective and the second implication is true because $f$ is injective.
+  Hence injectivity of $f$ and $g$ implies injectivity of $g \circ f.$
 * Suppose that $f$ and $g$ are both surjective.
   Since $g$ is surjective: $\forall v \in V, \exists y \in Y,$ such that $g(y) = v.$ And, since $f$ is surjective: $\forall y \in Y, \exists x \in X,$ such that $f(x) = y.$ Consequently, $\forall v \in V, \exists x \in X,$ such that $g(f(x)) = v.$
   Hence surjectivity of $f$ and $g$ implies surjectivity of $g \circ f.$
@@ -40,20 +41,45 @@ $$
 
 * $(\Rightarrow)$ Suppose that $f$ is injective. We construct $h : Y \to X$ as follows.
 
-  * From the injectivity of $f$ it follows that $\forall y \in f(X),\ \exists! x\in X,$ such that $y = f(x).$ 
-    We begin our construction of $h$ by first defining $h:f(X) \to X$ by the mapping $f(x) \mapsto x.$ 
+  * First, define $h:Y\setminus f(X) \to X$ by the mapping $y \mapsto x_1,$ where $x_1$ is any element of $X.$
+  * We will now define $h : f(X) \to X$ to complete the construction of $h : Y \to X.$ From the injectivity of $f$ it follows that $\forall y \in f(X),\ \exists! x\in X,$ such that $y = f(x).$ This permits us to define  $h:f(X) \to X$ by the mapping $f(x) \mapsto x.$
 
-  * Next, define $h:Y\setminus f(X) \to X$ by the mapping $y \mapsto x_1,$ where $x_1$ is any element of $X.$
-
-  With these two steps, we have constructed $h: Y \to X$ such that $(h \circ f) (x) = h(f(x)) = x.$ Hence, $h\circ f = \mathrm{id}_X.$
+  With these two steps, we have constructed $h: Y \to X$ such that $(h \circ f) (x) = h(f(x)) = x.$ Hence, $\exists h,$ such that $h\circ f = \mathrm{id}_X.$
 
 * $(\Leftarrow)$ Suppose that $(h \circ f = \mathrm{id}_X)$ $\and$ $\neg (f \text{ is injective}).$ Then $\exists x_1, \exists x_2 \in X,$ such that $(x_1 \ne x_2) \and (f(x_1) = f(x_2)).$  But since $h$ is a function, we have: $f(x_1) = f(x_2) \Rightarrow h(f(x_1)) = h(f(x_2)).$ But given that $h \circ f = \mathrm{id}_X,$ we have $h(f(x_1)) = h(f(x_2)) \Rightarrow x_1 = x_2.$ This contradiction establishes that the original assumption is false. Therefore, $(h \circ f = \mathrm{id}_X)$ $\Rightarrow$ $(f \text{ is injective}).$
 
 **c)**    Once again, we need to prove both sides of the implication.
 
-* $(\Rightarrow)$ Suppose that $f$ is surjective. We construct $h : Y \to X$ as follows. From the surjectivity of $f$ it follows that $\forall y \in Y,\ \exists x\in X,$ such that $y = f(x).$ If for each $y,$ we select any one such $x,$ then every $y \in Y$ can be written in the form $f(x).$ Now, define $h:Y \to X$ by the mapping $f(x) \mapsto x.$ Based on this definition of $h,$ we now have: $h(y) = h(f(x)) = x.$ We can now evaluate $f \circ h$ as follows: $(f \circ h) (y)$ $= f(h(y))$ $=$ $f(x) = y.$ Therefore, $f\circ h = \mathrm{id}_Y.$
+* $(\Rightarrow)$ Suppose that $f$ is surjective. We construct $h : Y \to X$ as follows. From the surjectivity of $f$ it follows that $\forall y \in Y,\ \exists x\in X,$ such that $y = f(x).$ If for each $y,$ we select any one such $x,$ then every $y \in Y$ can be written in the form $f(x).$ Now, define $h:Y \to X$ by the mapping $f(x) \mapsto x.$ Based on this definition of $h,$ we now have: $h(y) = h(f(x)) = x.$ We can now evaluate $f \circ h$ as follows: $(f \circ h) (y)$ $= f(h(y))$ $=$ $f(x) = y.$ Hence, $\exists h,$ such that $f\circ h = \mathrm{id}_Y.$
 
-* $(\Leftarrow)$ Suppose that $(f \circ h = \mathrm{id}_Y)$ $\and$ $\neg (f \text{ is surjective}).$ Then $\exists y \in Y,\forall x \in X : (f(x) \ne y).$  But, given that $(f \circ h = \mathrm{id}_Y),$ we have $\forall y \in Y : f(h(y)) = y.$ But $h(y) \in X.$ So we now have $\forall y \in Y,\exists x \in X : (f(x) = y).$ This contradiction establishes that the original assumption is false. Therefore, $(f \circ h = \mathrm{id}_Y)$ $\Rightarrow$ $(f \text{ is surjective}).$
+* $(\Leftarrow)$ Suppose that $(f \circ h = \mathrm{id}_Y)$ $\and$ $\neg (f \text{ is surjective}).$ The second condition tells us that $\exists y \in Y,\forall x \in X : (f(x) \ne y).$  The first condition tells us $\forall y \in Y : f(h(y)) = y.$ But $h(y) \in X.$ So we now have $\forall y \in Y,\exists x \in X : (f(x) = y).$ This contradiction establishes that the original assumption is false. Therefore, $(f \circ h = \mathrm{id}_Y)$ $\Rightarrow$ $(f \text{ is surjective}).$
+
+
+
+---
+
+***Exercise 4***
+
+* Suppose that $\mathsf{a}$ is True. We will now examine $\mathsf{b}.$ 
+
+  * We proceed as follows.  $x \in f^{-1}(f(A))$ $\Rightarrow$ $f(x) \in f(A)$ $\Rightarrow$ $\exists x' \in A : f(x') = f(x).$ But from the injectivity of $f$ we have $f(x') = f(x) \Rightarrow x' = x.$ It follows that $x \in A.$ Hence, $f^{-1}(f(A)) \subseteq A.$ 
+  * On the other hand, $A \subseteq f^{-1}(f(A))$ is True irrespective of the injectivity of $f.$ Indeed, $x \in A$ $\Rightarrow$ $f(x) \in f(A)$ $\Rightarrow$ $x \in f^{-1}(f(A)).$ 
+
+  Assuming the injectivity of $f,$ we have proved that $f^{-1}(f(A)) = A.$ We therefore have $\mathsf{a} \Rightarrow \mathsf{b}.$ 
+
+* Suppose that $\mathsf{a}$ is False. Then $\exists x_1, \exists x_2 \in X,$ such that $(x_1 \ne x_2) \and (f(x_1) = f(x_2)).$ Now consider the set $\{x_1\} \subset X.$ We find that $(x_2 \notin \{x_1\}) \and (x_2 \in f^{-1}(f(\{x_1\}))).$ In other words, we have shown that $\exists A = \{x_1\} \subset X$ such that $f^{-1}(f(A)) \ne A.$ We therefore have, $\neg\mathsf{a} \Rightarrow \neg\mathsf{b},$ which is the same as $\mathsf{b} \Rightarrow \mathsf{a}.$ 
+
+* Suppose that $\mathsf{a}$ is True. We will now examine $\mathsf{c}.$ We proceed as follows.
+
+  * $f(x) \in f(A \cap B)$ $\Rightarrow$ $\exists x' \in A \cap B : f(x') = f(x).$ But from the injectivity of $f$ we have $f(x') = f(x) \Rightarrow x' = x.$ It follows that $x \in A \cap B$ which in turn implies that $(x \in A) \and (x \in B)$ $\Rightarrow$ $(f(x) \in f(A)) \and (f(x) \in f(B))$ $\Rightarrow$ $f(x) \in f(A) \cap f(B).$  Hence, $f(A \cap B) \subseteq f(A) \cap f(B).$ 
+  * On the other hand, $f(x) \in f(A) \cap f(B)$ $\Rightarrow$ $\exists x_1 \in A : f(x_1) = f(x),$ and $\exists x_2 \in B : f(x_2) = f(x).$ But from the injectivity of $f$ we have $f(x_1) = f(x) \Rightarrow x_1 = x,$ and likewise $f(x_2) = f(x) \Rightarrow x_2 = x.$ We therefore have $(x \in A) \and (x \in B).$ It follows that $x \in A \cap B,$ and consequently $f(x) \in f(A \cap B).$ Hence, $f(A) \cap f(B) \subseteq f(A \cap B).$
+
+  Assuming the injectivity of $f,$ we have proved that $f(A \cap B) = f(A) \cap f(B).$ We therefore have $\mathsf{a} \Rightarrow \mathsf{c}.$  
+
+* Suppose that $\mathsf{a}$ is False. Then $\exists x_1, \exists x_2 \in X,$ such that $(x_1 \ne x_2) \and (f(x_1) = f(x_2)).$ We now find that $f(\{x_1\} \cap \{x_1\})$ $=$ $f(\empty) = \empty.$ However, $f(\{x_1\}) \cap f(\{x_1\}) \ne \empty.$ In other words, we have shown that $\exists A, B \subset X$ such that $f(A \cap B) \ne f(A) \cap f(B).$ We therefore have, $\neg\mathsf{a} \Rightarrow \neg\mathsf{c},$ which is the same as $\mathsf{c} \Rightarrow \mathsf{a}.$ 
+
+From $(\mathsf{a} \Rightarrow \mathsf{b}) \and (\mathsf{b} \Rightarrow \mathsf{a})$ it follows that $\mathsf{a} \Leftrightarrow \mathsf{b}.$ And from $(\mathsf{a} \Rightarrow \mathsf{c}) \and (\mathsf{c} \Rightarrow \mathsf{a})$ it follows that $\mathsf{a} \Leftrightarrow \mathsf{c}.$ We have thus proved that $\mathsf{a} \Leftrightarrow \mathsf{b} \Leftrightarrow \mathsf{c}.$ 
+
 
 
 
