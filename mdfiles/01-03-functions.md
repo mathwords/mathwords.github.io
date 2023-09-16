@@ -82,6 +82,26 @@ From $(\mathsf{a} \Rightarrow \mathsf{b}) \and (\mathsf{b} \Rightarrow \mathsf{a
 
 
 
+---
+
+***Exercise 6***
+
+* Proof that the given function is <u>injective</u>:
+  Suppose that $A$ and $B$ are subsets of $X,$ such that $A \ne B.$ With no loss of generality we can then assume that $A \not\subseteq B.$ Then $\exists a \in A : a \notin B.$ It follows that $(a,1) \in \chi_A,$ but $(a,1) \notin \chi_B.$ We have  shown that $A \ne B \Rightarrow \chi_A \ne \chi_B.$ Therefore the given function is injective.
+* Proof that the given function is <u>surjective</u>:
+  $\forall \, \chi_K \in \{0,1\}^X,$ we have $K \subseteq X.$ Hence, $K \in \mathcal{P}(X).$ Every $\chi_K \in \{0,1\}^X$ therefore has a preimage $K \in \mathcal{P}(X).$ 
+
+
+
+
+
+---
+
+***Exercise 7***
+
+**a)**    Both $f|A$ and $f\circ i$ have the same domain ($A$) and codomain ($B$). It remains to be proved that the also have the same value at each $x \in A.$ Indeed, $(f\circ i)(x)$ $=$ $f(i(x))$ $=$ $f(x) = (f|A)(x).$ 
+
+**b)**    $x \in (f|A)^{-1}(B)$ $\Leftrightarrow$ $(x\in A) \and (f(x) \in B)$ $\Leftrightarrow$ $(x \in A) \and (x \in f^{-1}(B))$ $\Leftrightarrow$ $x \in A \cap f^{-1}(B).$ 
 
 
 [< Home](/index.html)
