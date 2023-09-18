@@ -18,13 +18,17 @@
 
 4. p.21 Mismatch of left and right parentheses size in Exercise 4(b). 
 
-5. p.27 Exercise 4 should read:
+5. p.25 Incorrect spacing in paragraph immediately after Examples 4.6(a) and (b)
+
+   > We say that $f$ is **strictly increasing**... 
+
+6. p.27 Exercise 4 should read:
 
    > Verify that the function of Example 4.7(b) is not bounded.
 
    (Unless, the Exercise is meant to refer to Example 4.7(a))
 
-6. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
+7. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
 
    > A set $X$ is called **finite**, if $X$ is empty, or if there exists a bijection from $\{1,...,n\}$ to $X$ for some $n \in \mathbb{N}^{\times}.$
 
