@@ -4,21 +4,29 @@
 
 **ERRATA**
 
-1. p.20 Missing sentence in proposition 3.8. Add:
+1. p.20 Footnote language:
+
+   > ...that the reader should prove the claim himself/herself!
+
+2. p.20 Missing sentence in proposition 3.8. Add:
 
    > **3.8 Proposition**    Let $f:X \to Y$ be a function. The following...
 
-2. p.21 Missing space in Exercise 3(b). Insert space:
+3. p.21 Missing space in Exercise 3(b). Insert space:
 
    > $f$ is injective... 
 
-3. p.21 Mismatch of left and right parentheses size in Exercise 4(b). 
+4. p.21 Mismatch of left and right parentheses size in Exercise 4(b). 
 
-4. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
+5. p.27 Exercise 4 should read:
+
+   > Verify that the function of Example 4.7(b) is not bounded.
+
+   (Unless, the Exercise is meant to refer to Example 4.7(a))
+
+6. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
 
    > A set $X$ is called **finite**, if $X$ is empty, or if there exists a bijection from $\{1,...,n\}$ to $X$ for some $n \in \mathbb{N}^{\times}.$
-
-
 
 
 

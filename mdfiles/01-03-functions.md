@@ -104,5 +104,7 @@ From $(\mathsf{a} \Rightarrow \mathsf{b}) \and (\mathsf{b} \Rightarrow \mathsf{a
 **b)**    $x \in (f|A)^{-1}(B)$ $\Leftrightarrow$ $(x\in A) \and (f(x) \in B)$ $\Leftrightarrow$ $(x \in A) \and (x \in f^{-1}(B))$ $\Leftrightarrow$ $x \in A \cap f^{-1}(B).$ 
 
 
+
+
 [< Home](/index.html)
 
