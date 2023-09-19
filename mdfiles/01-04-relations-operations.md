@@ -32,7 +32,43 @@ Suppose to the contrary that the given function is bounded. Then $\exists B \in 
 
 Suppose that $a, b \in X : a \ne b.$ Now consider $f, g \in \text{Funct}(X,X)$ defined by $f(x) = a$ and $g(x) = b.$ We now have $(f \circ g)(x) = a,$ whereas $(g \circ f)(x) = b.$   
 
-  
+
+
+---
+
+**Exercise 4**
+
+Let $\circledast$ be an anticommutative operation on $X.$ Then we have, from the given conditions:
+
+1. $x = y \Rightarrow x \circledast y = r$
+2. $(x \circledast y) \circledast (y \circledast x) = r \Rightarrow x = y$
+
+Let $X$ be a set that has more than one element. Then, in addition to $r$ (the right identity), $\exists a \in X: a \ne r.$ 
+
+Now, if $\circledast$ is commutative, or if $r$ is also a left identity, then we have in particular: $r \circledast a = a \circledast r.$ It follows from condition (1) that $(r \circledast a) \circledast (a \circledast r) = r.$ But then it follows from condition (2) that $r = a,$ which is a contradiction. Hence, $\circledast$ cannot be commutative.
+
+
+
+---
+
+**Exercise 5**
+
+Let $\circledast$ and $\circledcirc$ be anticommutative operations on $X$ and $Y$ respectively. Further, $f : X \to Y$ satisfies:
+
+1. $f(r_X) = r_Y$
+2. $f(x \circledast y) = f(x) \circledcirc f(y),$ $\ \ x,y \in X.$
+
+**a)**    Consider $x \sim y\ $ $:\!\!\iff$ $f(x \circledast y) = r_Y.$ 
+
+* The relation is <u>reflexive</u> because $f(x \circledast x)$ $= f(r_X)$ $= r_Y.$ 
+* Next, we assume that $f(x \circledast y) = r_Y.$ It follows that $f(x) \circledcirc f(y) = r_Y.$ From the anticommutativity of $\circledcirc,$ we have $f(x) = f(y).$ Whereas, $f(y \circledast x)$ $= f(y) \circledcirc f(x) = r_Y.$ Where the last step follows from the anticommutativity of $\circledcirc$ and the fact that $f(x) = f(y).$ Hence $\sim$ is <u>symmetric</u>.
+* Suppose that $x \sim y\ $ and $y \sim z.$ Then, it follows as above that $f(x) = f(y)$ and $f(y) = f(z).$ Thus, $f(x) = f(z).$ From this it follows that $f(x \circledast z)$ $= f(x) \circledcirc f(z)$ $= r_Y.$ Hence, $\sim$ is <u>transitive</u>.
+
+Therefore, $\sim$ is an equivalence relation.
+
+**b)**    Consider the mapping $\tilde{f} : X/\!\! \sim \, \to Y,$ $[x] \mapsto f(x).$ From part (a), recall that we proved that $x \sim y \Leftrightarrow f(x) = f(y).$ It follows that $[x] = [y] \Leftrightarrow f(x) = f(y).$ Therefore, $\tilde{f}$ is well defined and injective. If $f$ is surjective, then $y \in Y \Rightarrow y = f(x).$ But $f(x) = \tilde{f}([x]),$ so that $\tilde{f}$ is also surjective, and hence bijective.   
+
+
 
 
 
