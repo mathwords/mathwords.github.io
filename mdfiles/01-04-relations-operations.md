@@ -72,19 +72,12 @@ Therefore, $\sim$ is an equivalence relation.
 
 ---
 
-**Exercise 6**
+**Exercise 9**
 
-**a)**    Suppose that $s = \sup(A \cup B).$ Then, $x \in A\cup B \Rightarrow x \le s.$ 
-
-$x \in A\Rightarrow x \le \sup A,$ and $x \in B\Rightarrow x \le \sup B.$ 
-
-$x \in A\cup B$ $\Rightarrow$ $(x \in A) \or (x \in B)$ $\Rightarrow$ $(x \le \sup A) \and (x \le \sup B)$ 
-
-$\sup\{a, b\} = \min\{x \in X\, ; x \text{ is an upper bound of }\{a,b\} \}$
-
-$\sup\{a, b\} = \min\{x \in X\, ; x \text{ is an upper bound of }\{a,b\} \}$
-
-But if $x$ is an upper bound of $\{a,b\},$ then $x$ is an upper bound of $\{a\}$ and $x$ is an upper bound of $\{b\}.$ 
+* $A \in \mathcal{A} \Rightarrow A \subseteq \bigcup\mathcal{A}.$ Hence, $\bigcup\mathcal{A}$ is an upper bound of $\mathcal{A}.$ 
+  Now, suppose $B$ is any upper bound of $\mathcal{A},$ then $x \notin B$ $\Rightarrow$ $\forall A \in \mathcal{A} : x \notin A$ $\Rightarrow$ $x \notin \bigcup\mathcal{A}.$ Hence, $\bigcup\mathcal{A} \subseteq B.$ Therefore, $\bigcup\mathcal{A}$ is the *least* upper bound of $\mathcal{A}.$
+* $A \in \mathcal{A} \Rightarrow \bigcap\mathcal{A} \subseteq A.$ Hence, $\bigcap\mathcal{A}$ is a lower bound of $\mathcal{A}.$ 
+  Now, suppose $B$ is any lower bound of $\mathcal{A},$ then $x \in B$ $\Rightarrow$ $\forall A \in \mathcal{A} : x \in A$ $\Rightarrow$ $x \in \bigcap\mathcal{A}.$ Hence, $B \subseteq \bigcap\mathcal{A}.$ Therefore, $\bigcup\mathcal{A}$ is the *greatest* lower bound of $\mathcal{A}.$ 
 
 
 
