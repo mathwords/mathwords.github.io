@@ -70,6 +70,22 @@ Therefore, $\sim$ is an equivalence relation.
 
 
 
+---
+
+**Exercise 6**
+
+**a)**    Suppose that $s = \sup(A \cup B).$ Then, $x \in A\cup B \Rightarrow x \le s.$ 
+
+$x \in A\Rightarrow x \le \sup A,$ and $x \in B\Rightarrow x \le \sup B.$ 
+
+$x \in A\cup B$ $\Rightarrow$ $(x \in A) \or (x \in B)$ $\Rightarrow$ $(x \le \sup A) \and (x \le \sup B)$ 
+
+$\sup\{a, b\} = \min\{x \in X\, ; x \text{ is an upper bound of }\{a,b\} \}$
+
+$\sup\{a, b\} = \min\{x \in X\, ; x \text{ is an upper bound of }\{a,b\} \}$
+
+But if $x$ is an upper bound of $\{a,b\},$ then $x$ is an upper bound of $\{a\}$ and $x$ is an upper bound of $\{b\}.$ 
+
 
 
 [< Home](/index.html)

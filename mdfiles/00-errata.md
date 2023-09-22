@@ -30,7 +30,11 @@
 
 7. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
 
-   > A set $X$ is called **finite**, if $X$ is empty, or if there exists a bijection from $\{1,...,n\}$ to $X$ for some $n \in \mathbb{N}^{\times}.$
+   > A set $X$ is called **finite**, if $X$ is empty, or if there exists a bijection from $\{1,...,n\}$ to $X$ for some $n \in \mathbb{N}^{\times}.$ 
+   
+8. p.169 Missing "be" in first line:
+
+   > Certain sequences in $\mathbb{R}$ can usefully be considered to converge...
 
 
 
@@ -52,7 +56,11 @@
    The solution to **Exercise 3**  is a partial solution to **Exercise 1**.
 
 3. **I.3** p.21 The phrasing of **Exercise 2** seems a bit unusual. Is it meant to convey the following?
-   Prove Proposition 3.8 and show that the ~~given inclusions are, in general, proper.~~ <u>propositions remain valid even when the inclusions are assumed to be proper.</u>
+   Prove Proposition 3.8 and show that the ~~given inclusions are, in general, proper.~~ <u>propositions remain valid even when the inclusions are assumed to be proper.</u> 
+
+4. **I.4** p.28 **Exercise 9** says "(see Example 4.6(a))" but Example 4.6(a) is simply the same statement of Exercise 9, without the words "...show that...". If a reference needs to be made, we may simply state **Exercise 9** as:
+
+   > Prove the claim of Example 4.6(a).
 
 
 
