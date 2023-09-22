@@ -77,7 +77,7 @@ Therefore, $\sim$ is an equivalence relation.
 * $A \in \mathcal{A} \Rightarrow A \subseteq \bigcup\mathcal{A}.$ Hence, $\bigcup\mathcal{A}$ is an upper bound of $\mathcal{A}.$ 
   Now, suppose $B$ is any upper bound of $\mathcal{A},$ then $x \notin B$ $\Rightarrow$ $\forall A \in \mathcal{A} : x \notin A$ $\Rightarrow$ $x \notin \bigcup\mathcal{A}.$ Hence, $\bigcup\mathcal{A} \subseteq B.$ Therefore, $\bigcup\mathcal{A}$ is the *least* upper bound of $\mathcal{A}.$
 * $A \in \mathcal{A} \Rightarrow \bigcap\mathcal{A} \subseteq A.$ Hence, $\bigcap\mathcal{A}$ is a lower bound of $\mathcal{A}.$ 
-  Now, suppose $B$ is any lower bound of $\mathcal{A},$ then $x \in B$ $\Rightarrow$ $\forall A \in \mathcal{A} : x \in A$ $\Rightarrow$ $x \in \bigcap\mathcal{A}.$ Hence, $B \subseteq \bigcap\mathcal{A}.$ Therefore, $\bigcup\mathcal{A}$ is the *greatest* lower bound of $\mathcal{A}.$ 
+  Now, suppose $B$ is any lower bound of $\mathcal{A},$ then $x \in B$ $\Rightarrow$ $\forall A \in \mathcal{A} : x \in A$ $\Rightarrow$ $x \in \bigcap\mathcal{A}.$ Hence, $B \subseteq \bigcap\mathcal{A}.$ Therefore, $\bigcap\mathcal{A}$ is the *greatest* lower bound of $\mathcal{A}.$ 
 
 
 
