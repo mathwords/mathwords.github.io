@@ -12,4 +12,5 @@
 2. [Sets](/01-02-sets.html)
 3. [Functions](/01-03-functions.html)
 4. [Relations and Operations](/01-04-relations-operations.html) 
+5. [The Natural Numbers](/01-05-natural-numbers.html)
 
