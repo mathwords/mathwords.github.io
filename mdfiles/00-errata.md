@@ -31,10 +31,14 @@
 7. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
 
    > A set $X$ is called **finite**, if $X$ is empty, or if there exists a bijection from $\{1,...,n\}$ to $X$ for some $n \in \mathbb{N}^{\times}.$ 
-   
-8. p.169 Missing "be" in first line:
 
-   > Certain sequences in $\mathbb{R}$ can usefully be considered to converge...
+8. p.129 Minor typo in second line:
+
+   > ...is largely built upon...
+
+9. p.169 Missing "be" in first line:
+
+   > Certain sequences in $\mathbb{R}$ can be usefully considered to converge...
 
 
 
