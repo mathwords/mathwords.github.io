@@ -63,10 +63,9 @@
 
 
 7. **Corollary to LMVT** (Criteria for function to be **constant**)
-   Let a function $f$​ be a function continuous on the closed interval $[a, b].$​ Then,
-   $$
-   \text{$f$ is constant on $[a,b$]} \iff \forall x \in [a,b], f'(x) = 0
-   $$
+   Let a function $f$ be a function continuous on the closed interval $[a, b].$ Then,
+   $f$ is constant on $[a,b$] $\iff$ $\forall x \in [a,b], f'(x) = 0.$
+
    *Proof:* 
    $(\Rightarrow)$ follows directly from the definition of the derivative, and indeed is used in the proof of RMVT.
    $(\Leftarrow)$ is a corollary of LMVT.
