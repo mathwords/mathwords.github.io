@@ -49,36 +49,50 @@
    
 
 6. **Cauchy's (Generalised) Mean Value Theorem** (**CMVT**)
-   If functions $f, g : [a, b] → \mathbb{R}$ are continuous on a closed interval $[a, b]$ and differentiable on the open interval $(a, b)$ and $f (a) = f (b),$ then there exists a point $c \in (a, b)$ such that: 
-   $$
-   f'(c)(g(b) - g(a)) = g'(c)(f(b) - f(a)).
-   $$
+
+   If functions $f, g : [a, b] → \mathbb{R}$ are continuous on a closed interval $[a, b]$ and differentiable on the open interval $(a, b)$ and $f (a) = f (b),$ then there exists a point $c \in (a, b)$ such that: $f'(c)(g(b) - g(a))$ $=$ $g'(c)(f(b) - f(a)).$​
+
    *Proof:* 
    From RMVT.
 
+   
 
+7. **Remark** 
+   All three mean value theorems are equivalent. That is, RMVT $\Leftrightarrow$ LMVT $\Leftrightarrow$​​​ CMVT.
 
-**Note:** All three mean value theorems are equivalent. That is, RMVT $\Leftrightarrow$ LMVT $\Leftrightarrow$ CMVT.
+   *Proof:* The standard proofs of LMVT and CMVT provide
 
+   * RMVT $\Rightarrow$ LMVT, and
+   * RMVT $\Rightarrow$ CMVT.
 
+   On the other hand, LMVT is a special case of CMVT, whereas RMVT is a special case of LMVT. This gives us:
 
-7. **Corollary to LMVT** (Criteria for function to be **constant**)
+   * CMVT $\Rightarrow$ LMVT, and
+   * LMVT $\Rightarrow$ RMVT.
+
+   The four conditions stated above complete the proof.
+
+   
+
+8. **Corollary to LMVT** (Criteria for function to be **constant**)
    Let a function $f$ be a function continuous on the closed interval $[a, b].$ Then,
    $f$ is constant on $[a,b$] $\iff$ $\forall x \in [a,b], f'(x) = 0.$
 
    *Proof:* 
    $(\Rightarrow)$ follows directly from the definition of the derivative, and indeed is used in the proof of RMVT.
-   $(\Leftarrow)$ is a corollary of LMVT.
+   $(\Leftarrow)$​​ is a corollary of LMVT.
 
    
 
-8. **Corollary to LMVT** (Criteria for function to be **monotonic**)
+9. **Corollary to LMVT** (Criteria for function to be **monotonic**)
 
    * If the derivative of a function is nonnegative (resp. positive) at every point of an open interval, then the function is increasing (resp. strictly increasing) on that interval.
+
    * If the derivative of a function is nonpositive (resp. negative) at every point of an open interval, then the function is decreasing (resp. strictly decreasing) on that interval.
 
-   *Proof:* 
-   Corollary of LMVT.
+     
+
+10. 
 
 
 
