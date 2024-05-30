@@ -1,6 +1,6 @@
 #### Principles of Mathematics
 
-* [Calculus](/calculus/calculus.html)
+* [Calculus](/calculus/calculus.html) 
 
 
 
