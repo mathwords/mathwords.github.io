@@ -48,7 +48,7 @@
 
    
 
-6. **Cauchy's Mean Value Theorem** (**CMVT**)
+6. **Cauchy's (Generalised) Mean Value Theorem** (**CMVT**)
    If functions $f, g : [a, b] → \mathbb{R}$ are continuous on a closed interval $[a, b]$ and differentiable on the open interval $(a, b)$ and $f (a) = f (b),$ then there exists a point $c \in (a, b)$ such that: 
    $$
    f'(c)(g(b) - g(a)) = g'(c)(f(b) - f(a)).
@@ -58,7 +58,7 @@
 
 
 
-**Note:** All three mean value theorems are equivalent. That is, RMVT $\iff$ LMVT $\iff$ CMVT.
+**Note:** All three mean value theorems are equivalent. That is, RMVT $\Leftrightarrow$ LMVT $\Leftrightarrow$ CMVT.
 
 
 
