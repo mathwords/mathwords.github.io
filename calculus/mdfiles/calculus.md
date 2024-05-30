@@ -57,8 +57,8 @@
 
    
 
-7. **Remark** 
-   All three mean value theorems are equivalent. That is, RMVT $\Leftrightarrow$ LMVT $\Leftrightarrow$​​​ CMVT.
+7. **Proposition** (**Equivalence of MVTs**)
+   RMVT $\Leftrightarrow$ LMVT $\Leftrightarrow$​​​ CMVT.
 
    *Proof:* The standard proofs of LMVT and CMVT provide
 
