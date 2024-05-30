@@ -17,4 +17,18 @@
 
 
 
+
+
+---
+
+#### Notes
+
+* From AE-Analysis
+
+  > The following theorem, which shows that there is only one order complete extension field of $\mathbb{Q}$​, is the most fundamental result of analysis and the starting point for all research into the ‘limiting processes’ which are at the center of all analytic investigation.
+  >
+  > **Theorem** There is, up to isomorphism, a unique order complete extension field $\mathbb{R}$ of $\mathbb{Q}$. This extension is called the field of real numbers.
+
+
+
 [< Home](/index.html)
