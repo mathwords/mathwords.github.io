@@ -6,15 +6,56 @@
 
 
 
-1. **Extreme Value Theorem** (**EVT**)
-   Let $f$ be a continuous function over a closed interval $[a,b].$ Then there exists a point in the interval where $f$ has a maximum, and there exists a point in the interval where $f$​ has a minimum. 
+1. **Archimedean Property of Reals** (**APR**)
+   If $x,y \in \mathbb{R}$ and $x>0,$ then $\exists n\in \mathbb{N}$ such that $y < nx.$​
+
+   *Proof:*
+   Real numbers.
+
+   
+
+2. **Corollary to APR** 
+   For any positive number $\varepsilon$ there exists a natural number $n$ such that $0 < \frac{1}{n} < \varepsilon.$​
+
+   *Proof:*
+   Set $y = 1,$ and $x = \varepsilon$​ in APR.
+
+   
+
+3. **Proposition**
+
+   1. $\nexists b \in \mathbb{R}$ such that $\forall n \in \mathbb{Z}^+, b \ge n.$
+   2. If $\forall n \in \mathbb{Z}^+, 0 \le a < \frac{1}{n},$ then $a = 0.$​
+
+   *Proof:*
+   Proof of 3.1 follows from Real numbers (especially completeness / APR). Then 3.2 follows from 3.1.
+
+   
+
+4. **Proposition** (Limit of a function is unique)
+   Let $S$ be a set of numbers arbitrarily close to $x_0$ and let $S'$ be a subset of $S$, also arbitrary close to $x_0.$ Let $f$ be a function defined on $S.$ If
+   $$
+   \begin{align*}
+   \lim_{x \to x_0} f(x) &= L, \ \text{with respect to } S \\
+   \lim_{x \to x_0} f(x) &= M, \ \text{with respect to } S'
+   \end{align*}
+   $$
+   Then $L = M.$​ In particular, the limit is unique.
+
+   *Proof:*
+   Definition of limit and Proposition 3.2.
+
+   
+
+5. **Extreme Value Theorem** (**EVT**)
+   Let $f$ be a continuous function over a closed interval $[a,b].$ Then there exists a point in the interval where $f$ has a maximum, and there exists a point in the interval where $f$​​ has a minimum. 
 
    *Proof:* 
    Real numbers. $\varepsilon$-$\delta.$​ 
 
    
 
-2. **Intermediate Value Theorem** (**IVT**)
+6. **Intermediate Value Theorem** (**IVT**)
    Let $f$ be a continuous function on the interval $[a,b].$ Let $\alpha = f(a)$ and $\beta = f(b).$ Let $\gamma$ be a number between $\alpha$ and $\beta.$  Then $\exists c \in [a,b]$ such that $f(c) = \gamma.$
 
    *Proof:* 
@@ -22,7 +63,7 @@
 
    
 
-3. **Fermat's Theorem**
+7. **Fermat's Theorem**
    Let $f$ be a function which is defined and differentiable in the open interval $(a,b).$ Let $c$ be a number in the interval at which the function has a local maximum or a local minimum. Then $f'(c) = 0.$ 
 
    *Proof:* 
@@ -30,7 +71,7 @@
 
    
 
-4. **Rolle's Theorem** (**RMVT**)
+8. **Rolle's Theorem** (**RMVT**)
    If a function $f : [a, b] → \mathbb{R}$ is continuous on a closed interval $[a, b]$ and differentiable on the open interval $(a, b)$ and $f (a) = f (b),$ then there exists a point $c \in (a, b)$ such that $f'(c) = 0.$
 
    *Proof:* 
@@ -38,7 +79,7 @@
 
    
 
-5. **Lagrange's Mean Value Theorem** (**LMVT**)
+9. **Lagrange's Mean Value Theorem** (**LMVT**)
    If a function $f : [a, b] → \mathbb{R}$ is continuous on a closed interval $[a, b]$ and differentiable on the open interval $(a, b)$ and $f (a) = f (b),$ then there exists a point $c \in (a, b)$ such that: 
    $$
    f'(c) = \frac{f(b) - f(a)}{b-a}.
@@ -48,51 +89,51 @@
 
    
 
-6. **Cauchy's (Generalised) Mean Value Theorem** (**CMVT**)
+10. **Cauchy's (Generalised) Mean Value Theorem** (**CMVT**)
 
-   If functions $f, g : [a, b] → \mathbb{R}$ are continuous on a closed interval $[a, b]$ and differentiable on the open interval $(a, b)$ and $f (a) = f (b),$ then there exists a point $c \in (a, b)$ such that: $f'(c)(g(b) - g(a))$ $=$ $g'(c)(f(b) - f(a)).$​
+    If functions $f, g : [a, b] → \mathbb{R}$ are continuous on a closed interval $[a, b]$ and differentiable on the open interval $(a, b)$ and $f (a) = f (b),$ then there exists a point $c \in (a, b)$ such that: $f'(c)(g(b) - g(a))$ $=$ $g'(c)(f(b) - f(a)).$​
 
-   *Proof:* 
-   From RMVT.
+    *Proof:* 
+    From RMVT.
 
-   
+    
 
-7. **Proposition** (**Equivalence of MVTs**)
-   RMVT $\Leftrightarrow$ LMVT $\Leftrightarrow$​​​ CMVT.
+11. **Proposition** (**Equivalence of MVTs**)
+    RMVT $\Leftrightarrow$ LMVT $\Leftrightarrow$​​​ CMVT.
 
-   *Proof:* The standard proofs of LMVT and CMVT provide
+    *Proof:* The standard proofs of LMVT and CMVT provide
 
-   * RMVT $\Rightarrow$ LMVT, and
-   * RMVT $\Rightarrow$ CMVT.
+    * RMVT $\Rightarrow$ LMVT, and
+    * RMVT $\Rightarrow$ CMVT.
 
-   On the other hand, LMVT is a special case of CMVT, whereas RMVT is a special case of LMVT. This gives us:
+    On the other hand, LMVT is a special case of CMVT, whereas RMVT is a special case of LMVT. This gives us:
 
-   * CMVT $\Rightarrow$ LMVT, and
-   * LMVT $\Rightarrow$ RMVT.
+    * CMVT $\Rightarrow$ LMVT, and
+    * LMVT $\Rightarrow$ RMVT.
 
-   The four conditions stated above complete the proof.
+    The four conditions stated above complete the proof.
 
-   
+    
 
-8. **Corollary to LMVT** (Criteria for function to be **constant**)
-   Let a function $f$ be a function continuous on the closed interval $[a, b].$ Then,
-   $f$ is constant on $[a,b$] $\iff$ $\forall x \in [a,b], f'(x) = 0.$
+12. **Corollary to LMVT** (Criteria for function to be **constant**)
+    Let a function $f$ be a function continuous on the closed interval $[a, b].$ Then,
+    $f$ is constant on $[a,b$] $\iff$ $\forall x \in [a,b], f'(x) = 0.$
 
-   *Proof:* 
-   $(\Rightarrow)$ follows directly from the definition of the derivative, and indeed is used in the proof of RMVT.
-   $(\Leftarrow)$​​ is a corollary of LMVT.
+    *Proof:* 
+    $(\Rightarrow)$ follows directly from the definition of the derivative, and indeed is used in the proof of RMVT.
+    $(\Leftarrow)$​​ is a corollary of LMVT.
 
-   
+    
 
-9. **Corollary to LMVT** (Criteria for function to be **monotonic**)
+13. **Corollary to LMVT** (Criteria for function to be **monotonic**)
 
-   * If the derivative of a function is nonnegative (resp. positive) at every point of an open interval, then the function is increasing (resp. strictly increasing) on that interval.
+    * If the derivative of a function is nonnegative (resp. positive) at every point of an open interval, then the function is increasing (resp. strictly increasing) on that interval.
 
-   * If the derivative of a function is nonpositive (resp. negative) at every point of an open interval, then the function is decreasing (resp. strictly decreasing) on that interval.
+    * If the derivative of a function is nonpositive (resp. negative) at every point of an open interval, then the function is decreasing (resp. strictly decreasing) on that interval.
 
-     
+      
 
-10. 
+14. 
 
 
 
