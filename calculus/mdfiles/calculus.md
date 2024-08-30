@@ -24,7 +24,7 @@
 
 3. **Proposition**
 
-   1. $\nexists b \in \mathbb{R}$ such that $\forall n \in \mathbb{Z}^+, b \ge n.$
+   1. $\forall b \in \mathbb{R},$ $\exists n \in \mathbb{Z}^+, n > b.$
    2. If $\forall n \in \mathbb{Z}^+, 0 \le a < \frac{1}{n},$ then $a = 0.$​
 
    *Proof:*
