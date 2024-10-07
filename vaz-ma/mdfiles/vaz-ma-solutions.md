@@ -6,7 +6,8 @@
 
 
 
-**Chapter 1    Some General Mathematical Concepts and Notation**
+**Chapter 1**
+**Some General Mathematical Concepts and Notation**
 
 1.	[Logical Symbolism](/vaz-ma/01-01-logical.html) 
 1.	[Sets and Elementary Operations on Them](/vaz-ma/01-02-sets.html)
@@ -15,7 +16,8 @@
 
 
 
-**Chapter 2    The Real Numbers**
+**Chapter 2**
+**The Real Numbers**
 
 1. The Axiom System and Some General Properties of the Set of Real Numbers
 
