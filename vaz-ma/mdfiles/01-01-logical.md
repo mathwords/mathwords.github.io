@@ -27,7 +27,7 @@
 
 ***Exercise 2***
 
-(a) and (b) are the **De Morgan's laws for logical operations**. (c) states that the **contrapositive** of the implication statement is equivalent to the implication statement. (d) can be thought of the definition of the of the implication in terms of the 3 basic logical operations. (e) states the negation, or the **contradiction** of the implication statement in terms of the 3 basic logical operations.
+(a) and (b) are **De Morgan's laws for logical operations**. (c) states that the **contrapositive** of the implication statement is equivalent to the implication statement. (d) can be considered the definition of the implication in terms of the 3 basic logical operations. (e) states the negation, or the **contradiction** of the implication statement in terms of the 3 basic logical operations.
 
 **a)**    $\neg ( A \wedge B )  \iff \neg A \vee  \neg B$
 
