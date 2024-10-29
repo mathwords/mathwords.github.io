@@ -1,12 +1,14 @@
 [< Home](/index.html)
 
+
+
 (Unofficial) notes, select exercise solutions & hints, and [errata](/vaz-ma/00-errata.html) corresponding to the 2nd English editions (2015-16) of **Mathematical Analysis I & II** by **Vladimir A. Zorich**. 
 
 ---
 
 
 
-**Chapter 1**
+**CHAPTER 1**
 **Some General Mathematical Concepts and Notation**
 
 1.	[Logical Symbolism](/vaz-ma/01-01-logical.html) 
@@ -16,7 +18,7 @@
 
 
 
-**Chapter 2**
+**CHAPTER 2**
 **The Real Numbers**
 
 1. The Axiom System and Some General Properties of the Set of Real Numbers
