@@ -1,6 +1,8 @@
 [Home](/index.html)  >  [Zorich Solutions](/vaz-ma/vaz-ma-solutions.html)
 
 
+
+
 **I.3   Functions**
 
 
@@ -104,6 +106,5 @@ From $(\mathsf{a} \Rightarrow \mathsf{b}) \and (\mathsf{b} \Rightarrow \mathsf{a
 
 
 
-
-[< Home](/index.html)
+[Home](/index.html)  >  [Zorich Solutions](/vaz-ma/vaz-ma-solutions.html)
 
