@@ -1,5 +1,4 @@
-[Home](/index.html)  >  [Solutions](/ae-analysis/ae-analysis-solutions.html)
-
+[Home](/index.html)  >  [Zorich Solutions](/vaz-ma/vaz-ma-solutions.html)
 
 
 **I.3   Functions**
