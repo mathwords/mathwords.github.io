@@ -2,43 +2,41 @@
 
 
 
-**ERRATA**
+## ERRATA
 
-1. p.20 Footnote language:
 
-   > ...that the reader should prove the claim himself/herself!
 
-2. p.20 Missing sentence in proposition 3.8. Add:
+1. p.13 Minor typo in *Example 3*. The phrase in the brackets should be written as:
 
-   > **3.8 Proposition**    Let $f:X \to Y$ be a function. The following...
+   > ...(the direct product $\mathbb{R}^2 =\mathbb{R}\times \mathbb{R}=\mathbb{R}_x \times \mathbb{R}_t$ of the spatial axis $\mathbb{R}_x$ and the time axis $\mathbb{R}_t$) into itself... 
 
-3. p.21 Missing space in Exercise 3(b). Insert space:
+   This is because, as apparent from the next paragraph, the ordered pair under consideration is $(x, t)$ rather than $(t, x)$.
 
-   > $f$ is injective... 
+2. p.14 Minor typo in *Example 9*. The penultimate sentence of the example should read:
 
-4. p.21 Mismatch of left and right parentheses size in Exercise 4(b). 
+   > ...is called the *translation* or *shift operator*.
 
-5. p.25 Incorrect spacing in paragraph immediately after Examples 4.6(a) and (b)
+3. p.16 The second line of section 1.3.2 should read:
 
-   > We say that $f$ is **strictly increasing**... 
+   > ...at the element $x \in X$ is usually called...
 
-6. p.27 Exercise 4 should read:
+4. p.18 Minor typo. The line following the recursive formula should read:
 
-   > Verify that the function of Example 4.7(b) is not bounded.
+   > This is none other than...
 
-   (Unless, the Exercise is meant to refer to Example 4.7(a))
+5. p.18 Minor typo. The sentence following the above sentence should read:
 
-7. p.46 The definition of finite set in para-2 seems awkwardly phrased. Rephrase as:
+   > ...computed at each step becomes...
 
-   > A set $X$ is called **finite**, if $X$ is empty, or if there exists a bijection from $\{1,...,n\}$ to $X$ for some $n \in \mathbb{N}^{\times}.$ 
+6. p.20 The last sentence of the 3rd paragraph after Definition 1 should read:
 
-8. p.129 Minor typo in second line:
+   > ...containing the range of values...
 
-   > ...is largely built upon...
+7. p.23 In Exercise 3(a), the symbol $\ne$ should be replaced by $\centernot\implies$ 
+   Incidentally, this typo does not exist in the 1st edition, but has been introduced in the 2nd edition.
 
-9. p.169 Missing "be" in first line:
+8. 
 
-   > Certain sequences in $\mathbb{R}$ can be usefully considered to converge...
 
 
 

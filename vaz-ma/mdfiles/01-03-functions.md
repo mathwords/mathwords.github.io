@@ -2,7 +2,6 @@
 
 
 
-
 **I.3   Functions**
 
 
@@ -10,50 +9,53 @@
 ---
 
 ***Exercise 1***
-(Proof of Proposition 3.6)
 
-**Proposition 3.6**   Let $f : X \to Y$ and $g : Y \to V$ be bijective. Then $g \circ f : X \to V$ is bijective and 
+**a)**    We first prove that $\forall x \in X, \exists y_1 \in Y$ $((x,y_1) \in R_1 \and (y_1,x) \in R_2).$ This establishes *existence* of the image of $x$ in $Y.$ We will then prove that if $\exists (x,y_2) \in R_1,$ then $y_1 = y_2,$ thereby establishing *uniqueness* of the image of $x$ in $Y.$ 
+
+* $x \in X$ $\implies (x,x) \in \Delta_X$ $\implies (x,x) \in R_2 \circ R_1$ $\implies$ $\exists y_1 \in Y ((x,y_1) \in R_1 \and (y_1,x) \in R_2).$
+
+* Now, assume further that, $(x,y_2) \in R_1.$ Then,
+  $$
+  \begin{align*}
+   &((x,y_1) \in R_1) \and ((x,y_2) \in R_1) \\
+  &\implies (y_1,x) \in R_2) \and ((x,y_2) \in R_1 \\
+  &\implies (y_1,y_2) \in R_1 \circ R_2 \\
+  &\implies (y_1,y_2) \in \Delta_Y \\
+  &\implies y_1 = y_2
+  \end{align*}
+  $$
+
+The above arguments establish that $R_1$ is functional. An exactly analogous argument can be used to establish that the relation $R_2$ is also functional.  
+
+Furthermore, the above arguments of existence and uniqueness have also established that:
 $$
-(g \circ f)^{-1} = f^{-1} \circ g^{-1}
+\forall x \in X, \exists! y \in Y ((x,y) \in R_1 \and (y,x) \in R_2).
 $$
-**Proof** 
+Since $R_1$ and $R_2$ are both functions, say $f_1$ and $f_2$ respectively, it follows from the above result that:
+$$
+(f_2(f_1(x)) = x) \and (f_1(f_2(y)) = y).
+$$
+$R_1$ and $R_2$ therefore define mutually inverse mappings of $X$ and $Y.$
 
-* Suppose that $f$ and $g$ are both injective.
-  $g(f(x_1)) = g(f(x_2))$ $\implies$ $f(x_1) = f(x_2)$ $\implies$ $x_1 = x_2.$ 
-  First implication is true because $g$ is injective and the second implication is true because $f$ is injective.
-  Hence injectivity of $f$ and $g$ implies injectivity of $g \circ f.$
-* Suppose that $f$ and $g$ are both surjective.
-  Since $g$ is surjective: $\forall v \in V, \exists y \in Y,$ such that $g(y) = v.$ And, since $f$ is surjective: $\forall y \in Y, \exists x \in X,$ such that $f(x) = y.$ Consequently, $\forall v \in V, \exists x \in X,$ such that $g(f(x)) = v.$
-  Hence surjectivity of $f$ and $g$ implies surjectivity of $g \circ f.$
-* $(g \circ f) \circ (f^{-1} \circ g^{-1})$ $=$ $((g \circ f) \circ f^{-1}) \circ g^{-1}$ $=$ $(g \circ (f \circ f^{-1})) \circ g^{-1}$ $=$ $(g \circ \mathrm{id}_Y) \circ g^{-1}$ $=$ $g \circ g^{-1}$ $=$ $\mathrm{id}_V.$
-  Also,
-  $(f^{-1} \circ g^{-1}) \circ (g \circ f)$ $=$ $((f^{-1} \circ g^{-1}) \circ g) \circ f$ $=$ $(f^{-1} \circ (g^{-1} \circ g)) \circ f$ $=$ $(f^{-1} \circ \mathrm{id}_Y) \circ f$ $=$ $f^{-1} \circ f$ $=$ $\mathrm{id}_X.$ 
-  It follows from the above results that $f^{-1} \circ g^{-1}$ is the inverse of $g \circ f$  (and by Proposition 3.5, the inverse is unique).
+**b)**    Let $R \subset X^2.$ 
 
+* $(\Rightarrow)$ Suppose that $R$ is transitive. The following reasoning proves that $R \circ R \subset R.$
+  $(x_1, x_2) \in R \circ R$ $\implies$ $\exists x_3 \in X ((x_1,x_3) \in R \and (x_3,x_2) \in R)$ $\implies$ $(x_1,x_2) \in R.$ 
+  The first implication follows from the definition of $R \circ R.$ The second implication follows from the transitivity of $R.$  
+* $(\Leftarrow)$ Suppose that $R \circ R \subset R.$ The following reasoning proves that $R$ is transitive.
+  $((x_1,x_3) \in R \and (x_3,x_2) \in R)$ $\implies$ $(x_1, x_2) \in R \circ R$  $\implies$ $(x_1,x_2) \in R.$
+  The first implication follows from the definition of $R \circ R.$ The second implication is true because $R \circ R \subset R.$  
 
+**c)**    Let $R \subset X^2.$ 
 
----
-
-***Exercise 3***
-
-**a)**    See Exercise 1.
-
-**b)**    We need to prove both sides of the implication.
-
-* $(\Rightarrow)$ Suppose that $f$ is injective. We construct $h : Y \to X$ as follows.
-
-  * First, define $h:Y\setminus f(X) \to X$ by the mapping $y \mapsto x_1,$ where $x_1$ is any element of $X.$
-  * We will now define $h : f(X) \to X$ to complete the construction of $h : Y \to X.$ From the injectivity of $f$ it follows that $\forall y \in f(X),\ \exists! x\in X,$ such that $y = f(x).$ This permits us to define  $h:f(X) \to X$ by the mapping $f(x) \mapsto x.$
-
-  With these two steps, we have constructed $h: Y \to X$ such that $(h \circ f) (x) = h(f(x)) = x.$ Hence, $\exists h,$ such that $h\circ f = \mathrm{id}_X.$
-
-* $(\Leftarrow)$ Suppose that $(h \circ f = \mathrm{id}_X)$ $\and$ $\neg (f \text{ is injective}).$ Then $\exists x_1, \exists x_2 \in X,$ such that $(x_1 \ne x_2) \and (f(x_1) = f(x_2)).$  But since $h$ is a function, we have: $f(x_1) = f(x_2) \Rightarrow h(f(x_1)) = h(f(x_2)).$ But given that $h \circ f = \mathrm{id}_X,$ we have $h(f(x_1)) = h(f(x_2)) \Rightarrow x_1 = x_2.$ This contradiction establishes that the original assumption is false. Therefore, $(h \circ f = \mathrm{id}_X)$ $\Rightarrow$ $(f \text{ is injective}).$
-
-**c)**    Once again, we need to prove both sides of the implication.
-
-* $(\Rightarrow)$ Suppose that $f$ is surjective. We construct $h : Y \to X$ as follows. From the surjectivity of $f$ it follows that $\forall y \in Y,\ \exists x\in X,$ such that $y = f(x).$ If for each $y,$ we select any one such $x,$ then every $y \in Y$ can be written in the form $f(x).$ Now, define $h:Y \to X$ by the mapping $f(x) \mapsto x.$ Based on this definition of $h,$ we now have: $h(y) = h(f(x)) = x.$ We can now evaluate $f \circ h$ as follows: $(f \circ h) (y)$ $= f(h(y))$ $=$ $f(x) = y.$ Hence, $\exists h,$ such that $f\circ h = \mathrm{id}_Y.$
-
+* $(\Rightarrow)$ Suppose that $R$ is antisymmetric. The following reasoning proves that $R \cap R' \subset \Delta_X.$
+  $(x,y) \in R \cap R'$ $\implies$ $xRy \and xR'y$ $\implies$ $xRy \and yRx$ $\implies$ $x = y$ $\implies$ $(x,y) \in \Delta_X.$
+  The second implication follows from the definition of $R'.$ The third implication is true because $R$ is antisymmetric.
 * $(\Leftarrow)$ Suppose that $(f \circ h = \mathrm{id}_Y)$ $\and$ $\neg (f \text{ is surjective}).$ The second condition tells us that $\exists y \in Y,\forall x \in X : (f(x) \ne y).$  The first condition tells us $\forall y \in Y : f(h(y)) = y.$ But $h(y) \in X.$ So we now have $\forall y \in Y,\exists x \in X : (f(x) = y).$ This contradiction establishes that the original assumption is false. Therefore, $(f \circ h = \mathrm{id}_Y)$ $\Rightarrow$ $(f \text{ is surjective}).$
+
+**d)**    Suppose that $(a,b)$ is an arbitrary element of $X^2.$ We have,
+
+$(a,b) \in R \cup R'$ $\iff$ $a R b \or a R' b$ $\iff$  $a R b \or b R a.$
 
 
 

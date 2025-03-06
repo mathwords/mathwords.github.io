@@ -17,17 +17,22 @@ $$
 $$
 **Proof** 
 
-* Suppose that $f$ and $g$ are both injective.
+* Suppose that $f$ and $g$ are both injective. We need to prove that $(g \circ f)(x_1)$ $=$ $(g \circ f)(x_2)$ $\implies$ $x_1 = x_2.$ Proceed as follows:
   $g(f(x_1)) = g(f(x_2))$ $\implies$ $f(x_1) = f(x_2)$ $\implies$ $x_1 = x_2.$ 
-  First implication is true because $g$ is injective and the second implication is true because $f$ is injective.
+  First implication is true because $g$ is injective, and the second implication is true because $f$ is injective.
   Hence injectivity of $f$ and $g$ implies injectivity of $g \circ f.$
-* Suppose that $f$ and $g$ are both surjective.
-  Since $g$ is surjective: $\forall v \in V, \exists y \in Y,$ such that $g(y) = v.$ And, since $f$ is surjective: $\forall y \in Y, \exists x \in X,$ such that $f(x) = y.$ Consequently, $\forall v \in V, \exists x \in X,$ such that $g(f(x)) = v.$
-  Hence surjectivity of $f$ and $g$ implies surjectivity of $g \circ f.$
+* Suppose that $f$ and $g$ are both surjective. We need to prove that $(g \circ f) (X) = V.$ Indeed,
+  $g(f(X)) = g(Y) = V.$
+  First equality is true because $f$ is surjective, and the second equality is true because $g$ is surjective.
+
 * $(g \circ f) \circ (f^{-1} \circ g^{-1})$ $=$ $((g \circ f) \circ f^{-1}) \circ g^{-1}$ $=$ $(g \circ (f \circ f^{-1})) \circ g^{-1}$ $=$ $(g \circ \mathrm{id}_Y) \circ g^{-1}$ $=$ $g \circ g^{-1}$ $=$ $\mathrm{id}_V.$
   Also,
   $(f^{-1} \circ g^{-1}) \circ (g \circ f)$ $=$ $((f^{-1} \circ g^{-1}) \circ g) \circ f$ $=$ $(f^{-1} \circ (g^{-1} \circ g)) \circ f$ $=$ $(f^{-1} \circ \mathrm{id}_Y) \circ f$ $=$ $f^{-1} \circ f$ $=$ $\mathrm{id}_X.$ 
   It follows from the above results that $f^{-1} \circ g^{-1}$ is the inverse of $g \circ f$  (and by Proposition 3.5, the inverse is unique).
+
+<!-- Suppose that $f$ and $g$ are both surjective.
+Since $g$ is surjective: $\forall v \in V, \exists y \in Y,$ such that $g(y) = v.$ And, since $f$ is surjective: $\forall y \in Y, \exists x \in X,$ such that $f(x) = y.$ Consequently, $\forall v \in V, \exists x \in X,$ such that $g(f(x)) = v.$
+Hence surjectivity of $f$ and $g$ implies surjectivity of $g \circ f.$ -->
 
 
 
