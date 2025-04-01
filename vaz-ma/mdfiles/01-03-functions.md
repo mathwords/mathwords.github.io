@@ -124,11 +124,72 @@ In the following, $f : X \to Y,$ is a mapping from $X$ into $Y.$ $A$ and $B$ are
 
 **b)**    $A \neq \varnothing$ $\implies$ $x \in A$ $\implies$ $f(x) \in f(A)$ $\implies$ $f(A) \neq \varnothing.$
 
+**c)**    $y \in f(A \cap B)$ $\iff$ $\exists x \in A \cap B$ such that $y = f(x)$ $\iff$ $(x \in A)$ $\and$ $(x \in B)$ $\and$ $y = f(x)$ $\implies$ $y \in f(A) \and y \in f(B)$ $\iff$ $y \in f(A) \cap f(B).$
+
+> [!Note]
+>
+> Contrast the above chain of reasoning (all equivalences except one) with the reasoning in the next problem (all equivalences).
+
+**d)**   $y \in f(A \cup B)$ $\iff$ $\exists x \in A \cup B$ such that $y = f(x)$ $\iff$ $((x \in A) \or (x \in B))$ $\and$ $y = f(x)$ $\iff$ $((x \in A) \and (y = f(x)))$ $\or$ $((x \in B) \and (y = f(x)))$ $\iff$ $y \in f(A) \cup f(B).$ 
+
+**e)**    Suppose that $A' \subset B'.$ Then,
+
+$x \in f^{-1}(A')$ $\implies$ $\exists y \in A'$ such that $f(x) = y$ $\implies$ $\exists y \in B'$ such that $f(x) = y$  $\implies$ $x \in f^{-1}(B').$
+
+**f)**   $x \in f^{-1}(A' \cap B')$ $\iff$ $\exists y \in A' \cap B'$ such that $y = f(x)$ $\iff$ $(y \in A') \and (y \in B')$ $\and$ $y = f(x)$ $\iff$ $((y \in A') \and (y = f(x)))$ $\and$ $((y \in B') \and (y = f(x)))$ $\iff$ $x \in f^{-1}(A') \cap f^{-1}(B').$ 
+
+**g)**   $x \in f^{-1}(A' \cup B')$ $\iff$ $\exists y \in A' \cup B'$ such that $y = f(x)$ $\iff$ $((y \in A') \or (y \in B'))$ $\and$ $y = f(x)$ $\iff$ $((y \in A') \and (y = f(x)))$ $\or$ $((y \in B') \and (y = f(x)))$ $\iff$ $x \in f^{-1}(A') \cup f^{-1}(B').$ 
+
+**h)**    Suppose that $Y \supset A' \supset B'.$ Then,
+
+$x \in f^{-1}(A'\setminus B')$ $\iff$ $\exists y \in A' \setminus B'$ such that $f(x) = y$ $\iff$ $((y \in A') \and (y \notin B'))$ $\and$ $y = f(x)$ $\iff$ $x \in f^{-1}(A')$ $\and$ $x \notin f^{-1}(B')$ $\iff$ $x \in f^{-1}(A') \setminus f^{-1}(B').$
+
+**i)**   In the solution of Exercise (h) above, replace $A'$ with $Y$ and $B'$ with $A'.$
+
+$x \in f^{-1}(C_YA')$ $\iff$ $\exists y \in C_YA'$ such that $f(x) = y$ $\iff$ $((y \in Y) \and (y \notin A'))$ $\and$ $y = f(x)$ $\iff$ $x \in f^{-1}(Y)$ $\and$ $x \notin f^{-1}(A')$ $\iff$ $x \in X \and x \notin f^{-1}(A')$ $\iff$ $x \in C_Xf^{-1}(A').$ 
+
+**j)**    $x \in A$ $\implies$ $f(x) \in f(A)$ $\iff$ $x \in f^{-1}(f(A)).$
+
+**k)**   $y \in f(f^{-1}(B'))$ $\iff$ $\exists x \in f^{-1}(B')$ such that $y = f(x)$ $\implies$ $y \in B'.$
+
 
 
 ---
 
 ***Exercise 4***
+
+**a)**    Let $f : X \to Y,$ and $B'$ be an arbitrary subset of $Y.$ We will prove that $f$ is surjective if and only if $f(f^{-1}(B')) = B'$ for every set $B' \subset Y.$
+
+* $(\Rightarrow)$  We observe that $f(f^{-1}(B')) \subset B'$ is true for any $f$ as proved in Exercise 3(k). Now suppose that $f$ is surjective and proceed as follows:
+
+  $y \in B'$ $\implies$ $\exists x \in f^{-1}(B')$ such that $y = f(x)$ $\implies$ $y \in f(f^{-1}(B')).$
+
+  Therefore, $B' \subset f(f^{-1}(B')).$
+
+* $(\Leftarrow)$  Suppose that $f(f^{-1}(B')) = B'$ for every $B' \subset Y.$ Then, in particular, the statement is true for $B' = Y.$ Thus, $Y = f(f^{-1}(Y)).$ But $f^{-1}(Y) = X$ by definition. Therefore, we have $Y = f(X),$ so $f$ is surjective.
+
+**b)**    Let $f : X \to Y.$ 
+
+* In Exercise $4(a)$ we have proved that $f$ is surjective if and only if $f(f^{-1}(B')) = B'$ for every set $B' \subset Y.$ 
+* From Exercises 5(a) and 5(b) together it follows that $f$ is injective if and only if $f^{-1}(f(A)) = A$ for every set $A \subset X.$
+
+From the two statements above it follows that $f$ is bijective if and only if
+$$
+\big(f^{-1}(f(A)) = A\big) \and \big(f(f^{-1}(B')) = B' \big)
+$$
+for every set $A \subset X$ and every set $B' \subset Y.$ 
+
+ 
+
+---
+
+***Exercise 5***
+
+
+
+
+
+---
 
 
 
