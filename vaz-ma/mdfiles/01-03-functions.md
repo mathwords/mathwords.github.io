@@ -185,6 +185,77 @@ for every set $A \subset X$ and every set $B' \subset Y.$
 
 ***Exercise 5***
 
+**a)** $\iff$ **b)**
+
+* $(\Rightarrow)$ We observe that $ A \subset f^{-1}(f(A))$ is true for any $f$ as proved in Exercise 3(j). Now suppose that $f$ is injective and proceed as follows:
+
+  $x \in f^{-1}(f(A))$ $\implies$ $\exists y \in f(A)$ such that $y = f(x).$ 
+
+  But, $y \in f(A)$ $\implies$ $\exists x' \in A$ such that $y = f(x').$ 
+
+  From the above, it follows that $f(x) = f(x'),$ and since $f$ is injective, it follows that $x = x'.$ But then, $x' \in A,$ and consequently, $f^{-1}(f(A)) \subset A.$
+
+  Therefore, $f^{-1}(f(A)) = A.$
+
+* $(\Leftarrow)$  Suppose that $f^{-1}(f(A)) = A$ for every $A \subset X.$ Then, in particular, the statement is true for each of the singletons $\{ x_1 \}$ and $\{ x_2 \}$ for any $x_1,x_2 \in X.$ We now reason as follows:
+
+  $f(x_1) = f(x_2)$ $\implies$ $f(\{x_1\}) = f(\{x_2\})$ $\implies$ $f^{-1}\big(f(\{x_1\})\big) = f^{-1}\big(f(\{x_2\})\big)$ $\implies$ $\{ x_1 \} = \{ x_2 \}$ $\implies$ $x_1 = x_2.$
+
+  Therefore, $f$ is injective.
+
+**a)** $\iff$ **c)**
+
+* $(\Rightarrow)$  $f(A \cap B) \subset f(A) \cap f(B)$ is true for any $f.$ Indeed, $y \in f(A \cap B)$ $\implies$ $\exists x \in A \cap B$ such that $y = f(x)$ $\implies$ $(x \in A) \and (x \in B) \and y = f(x)$ $\implies$ $y \in f(A) \cap f(B).$
+
+  Let us now assume that $f$ is injective. The following reasoning proves that $f(A) \cap f(B) \subset f(A \cap B).$
+
+  $y \in f(A) \cap f(B)$ $\implies$ $\exists x \in A$ and $\exists x' \in B$ such that $f(x) = f(x') = y.$ But, since $f$ is injective, it follows that $x = x'.$ It follows that $x \in A \cap B,$ and hence $y \in f(A \cap B).$ 
+
+* $(\Leftarrow)$  Suppose that $f(A \cap B) = f(A) \cap f(B)$ for any two subsets $A$ and $B$ of $X.$ Consider arbitrary elements $x_1, x_2 \in X.$ The following reasoning proves that $f$ is injective.
+
+  $f(x_1) = f(x_2) = y$ $\implies$ $y \in f\big(\{ x_1 \}\big) \and y \in f\big(\{ x_2 \}\big)$ $\implies$ $y \in f\big(\{ x_1 \}\big) \cap f\big(\{ x_2 \}\big)$ $\implies$ $y \in f\big(\{ x_1 \} \cap \{ x_2 \}\big)$ $\implies$ $\{ x_1 \} \cap \{ x_2 \} \ne \varnothing$ $\implies$ $x_1 = x_2.$
+
+**a)** $\iff$ **d)**
+
+* $(\Rightarrow)$  $f(A) \cap f(B) = \varnothing$ $\implies$ $A \cap B = \varnothing$ is true for any $f.$ This relationship becomes transparent if we consider the contrapositive of the statement. That is, $A \cap B \ne \varnothing$ $\implies$ $f(A) \cap f(B) \ne \varnothing.$  Now suppose that $f$ is injective. We will prove that $A \cap B = \varnothing$ $\implies$ $f(A) \cap f(B) = \varnothing.$ Once again, let us prove the contrapositive statement, namely, $f(A) \cap f(B) \ne \varnothing$ $\implies$ $A \cap B \ne \varnothing.$ Indeed,
+
+  $f(A) \cap f(B) \ne \varnothing$ $\implies$ $y \in f(A) \cap f(B)$ $\implies$ $\exists x \in A$ and $\exists x' \in B$ such that $f(x) = f(x') = y.$ But, since $f$ is injective, it follows that $x = x'.$ It follows that $x \in A \cap B,$ and therefore $A \cap B \ne \varnothing.$ 
+
+* $(\Leftarrow)$  Suppose that $f(A) \cap f(B) = \varnothing$ $\iff$ $A \cap B = \varnothing.$ The following reasoning proves that $f$ is injective.
+
+  $x_1 \ne x_2$ $\implies$ $\{ x_1 \} \cap \{ x_2 \} = \varnothing$ $\implies$ $f\big(\{ x_1 \}\big) \cap f\big(\{ x_2 \}\big) = \varnothing$ $\implies$ $f(x_1) \ne f(x_2).$
+
+**a)** $\iff$ **e)**
+
+In the following we have, $X \supset A \supset B.$
+
+* $(\Rightarrow)$  $f(A) \setminus f(B) \subset f(A \setminus B)$ is true for any $f.$ Indeed,  
+
+  $y \in f(A) \setminus f(B)$ $\implies$ $y \in f(A) \and y \notin f(B)$ $\implies$ $(\exists x \in A) \and (y = f(x)) \and (x \notin B)$ $\implies$ $(x \in A \setminus B) \and (y = f(x))$ $\implies$ $y \in f(A \setminus B).$ 
+
+  Next, suppose that $f$ is injective. We will prove that $f(A \setminus B) \subset f(A) \setminus f(B).$ When $A \setminus B = \varnothing$ this is obviously true. Now, consider the case when $A \setminus B \ne \varnothing.$ We will prove the assertion in this case by contradiction. Suppose that $f(A \setminus B) \not\subset f(A) \setminus f(B).$ Then,
+
+  $\exists y \in f(A \setminus B)$ such that $y \notin f(A) \setminus f(B)$ $\implies$ $(\exists x \in A)$ $\and$ $(y = f(x))$ $\and$ $(x \notin B)$ $\and$ $\big( (y \notin f(A)) \or (y \in f(B)) \big)$ $\implies$ $(y \in f(A))$ $\and$ $(y = f(x))$ $\and$ $(x \notin B)$ $\and$ $\big( (y \notin f(A)) \or (y \in f(B)) \big)$ $\implies$ $(y \in f(A))$ $\and$ $(y = f(x))$ $\and$ $(x \notin B)$ $\and$ $(y \in f(B))$ $\implies$ $(y = f(x))$ $\and$ $(x \notin B)$ $\and$ $(\exists x' \in B)$ $\and$ $(f(x') = y)$  $\implies$ $\big( f(x) = f(x') \big)$ $\and$ $(x \notin B)$ $\and$ $(x' \in B)$ $\implies$ $(x = x')$ $\and$ $(x \notin B)$ $\and$ $(x' \in B)$ $\implies$ $(x \notin B)$ $\and$ $(x \in B).$
+
+  The contradiction proves that $f(A \setminus B) \subset f(A) \setminus f(B).$
+
+  Therefore, we finally have $f(A \setminus B) = f(A) \setminus f(B).$
+
+* $(\Leftarrow)$  Suppose that $f(A \setminus B) = f(A) \setminus f(B).$ 
+
+  $x_1 \ne x_2$ $\implies$ $\{ x_1, x_2 \} \setminus \{ x_1 \} = \{ x_2 \}$ $\implies$ $f\big(\{ x_1, x_2 \} \setminus \{ x_1 \} \big) = f\big(\{ x_2 \}\big)$ $\implies$ $f\big(\{ x_1, x_2 \} \big) \setminus f\big(\{ x_1 \} \big) = f\big(\{ x_2 \}\big)$ $\implies$ $f(x_2) \notin f\big(\{ x_1 \}\big)$ $\implies$ $f(x_2) \ne f(x_2).$
+  
+  > [!Warning]
+  >
+  > We can write $\{ x_2 \}$ as $\{ x_1, x_2 \} \setminus \{ x_1 \}$ only when $x_1 \ne x_2.$
+
+ 
+
+
+---
+
+***Exercise 6***
+
 
 
 
